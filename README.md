@@ -161,6 +161,7 @@ For setup, configure and deploy parts, you may also refer to [This](http://blog.
 	- You need to use root permission to set up password-less SSH. To set the root password see [this](http://askubuntu.com/questions/155278/how-do-i-set-the-root-password-so-i-can-use-su-instead-of-sudo).
 	- If you change the ssh configuration, you may need to restart ssh by `service ssh restart`.
 	- Make sure the password-less SSH works in both directions among four machines: scp the private and public key to the .ssh folder of four machines and modify authorized_key file.
+	- You can use the ssh-copy-id to easily set the public key in the other hosts.
 	- If something goes wrong with the password-less SSH, you may get timeout error in building cluster. Then try Installing Ambari Agents Manually, look at [this](https://ambari.apache.org/1.2.0/installing-hadoop-using-ambari/content/ambari-chap6-1.html). For Ubuntu, use apt-get instead of yum.
 	
 * If you come accross failure in registering four machines, check:
